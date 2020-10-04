@@ -1,2 +1,2 @@
 # Shield-Bot-List-API
-The shield bot list api
+This is the Sheild Bot List API!
