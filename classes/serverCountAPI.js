@@ -19,7 +19,7 @@ module.exports = class {
 
     init() {
         return new Promise((resolve, reject) => {
-            this.fetch(`https://shieldbotlist.website/api/auth/stats/${this.client.user.id}`, {
+            this.fetch(`https://shieldbotlist.website:25565/api/auth/stats/${this.client.user.id}`, {
                 method: 'POST',
                 headers: {
                     'authorization': this.Auth_Token,
