@@ -27,6 +27,7 @@ import sblapi
 
 response = sblapi.sblapi('botid', 'authtoken', guildcount)
 print(response.text)
+#If you want to post everys say 5 minutes you have to create your own loop. Might change at a later date
 
 ```
 ### Get Likes Last 24 hours
