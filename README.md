@@ -22,24 +22,21 @@ Discord: https://discord.gg/rmZkZPR5CX
 ### Server Count Post
 
 
-```javascript
-const APIs = require('shieldbotlistapi');
-// client should be defined as your discord client.
-const serverCountAPI = new APIs.serverCountAPI('authtoken', client);
-serverCountAPI.init().then(response => console.log(response));
-// If you want to get a json response, you can do JSON.parse() method
+```python
+import sblapi
+
+response = sblapi.sblapi('botid', 'authtoken', guildcount)
+print(response.text)
 
 ```
 ### Get Likes Last 24 hours
 
-```javascript
+```python
 
-const likeAPI = new APIs.likeApi('authtoken', client);
-likeAPI.init().then(textRep => {
-    const response = JSON.parse(textRep);
-    console.log(response.users.length);
-});
-// parse it so you can access JSON props.
+import sblapi
+
+response = sblapi.getlikes('botid', 'authtoken')
+print(response.text)
 
 ```
 
